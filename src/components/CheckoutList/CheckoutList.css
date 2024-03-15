@@ -1,0 +1,25 @@
+.checkout-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.checkout-item__title {
+  max-width: 180px;
+  width: 100%;
+}
+.checkout-item__quantity {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+.checkout-item__total {
+  min-width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,24 @@
+.item-card-skeleton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.item-card__img-skeleton {
+  width: 200px;
+  height: 200px;
+  background-color: #e4e2e2;
+  border-radius: 15px;
+}
+.item-card__preview-skeleton {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+}
+.item-card__info-skeleton {
+  background-color: #e4e2e2;
+  border-radius: 15px;
+  width: 200px;
+  height: 20px;
+}

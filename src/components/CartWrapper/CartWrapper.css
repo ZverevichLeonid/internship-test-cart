@@ -1,0 +1,6 @@
+.cart-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 12px;
+  position: relative;
+}

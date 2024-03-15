@@ -1,0 +1,10 @@
+.Counter {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border-radius: 8px;
+  align-items: center;
+  max-height: 32px;
+  gap: 4px;
+  border: 1px solid #d1d1d1;
+}
