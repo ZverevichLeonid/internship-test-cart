@@ -1,27 +1,33 @@
-# vite-template-redux
+# Профильное задание на стажировку Вконтакте Фронтенд-разработчик в команду VK Маркет
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+## 🚀 Запуск приложения
+
+👉Посмотреть live demo <a href='https://codesandbox.io/p/github/ZverevichLeonid/internship-test-cart/main?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cltsw5zc40006356keo1eea14%2522%252C%2522sizes%2522%253A%255B50.11380060723639%252C49.88619939276361%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cltsw5zc40002356k2dkxq1hx%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cltsw5zc40004356kimnzco2e%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cltsw5zc40005356kpretf4tf%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%252C%2522sizes%2522%253A%255B40%252C60%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cltsw5zc40002356k2dkxq1hx%2522%253A%257B%2522id%2522%253A%2522cltsw5zc40002356k2dkxq1hx%2522%252C%2522tabs%2522%253A%255B%255D%257D%252C%2522cltsw5zc40005356kpretf4tf%2522%253A%257B%2522id%2522%253A%2522cltsw5zc40005356kpretf4tf%2522%252C%2522activeTabId%2522%253A%2522cltttyxnt018u356k1etvu8p7%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522TASK_PORT%2522%252C%2522taskId%2522%253A%2522dev%2522%252C%2522port%2522%253A5173%252C%2522id%2522%253A%2522cltttyxnt018u356k1etvu8p7%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522path%2522%253A%2522%252F%2522%257D%255D%257D%252C%2522cltsw5zc40004356kimnzco2e%2522%253A%257B%2522id%2522%253A%2522cltsw5zc40004356kimnzco2e%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522TASK_LOG%2522%252C%2522taskId%2522%253A%2522dev%2522%252C%2522id%2522%253A%2522cltttz81w01n4356kj85mgfvp%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%252C%2522activeTabId%2522%253A%2522cltttz81w01n4356kj85mgfvp%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Atrue%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D'>CodeSandBox</a>
+</br>
+👉Посмотреть live demo <a href="https://internship-test-cart.vercel.app/">Vercel</a>
+</br>
+Клонировать реозиторий
 
 ```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+ git clone https://github.com/ZverevichLeonid/internship-test-cart.git
+```
+Установить локально и запустить 
+
+```sh
+ npm install 
+ npm run dev 
 ```
 
-## Goals
+## В проекте использовались: 
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+» TypeScript <br>
+» React <br>
+» Redux <br>
+» VKUI <br>
 
-## Scripts
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
 
-## Inspiration
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+
+
+
