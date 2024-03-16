@@ -19,7 +19,6 @@ if (container) {
           </Provider>
         </AdaptivityProvider>
       </ConfigProvider>
-      ,
     </React.StrictMode>,
   )
 } else {
