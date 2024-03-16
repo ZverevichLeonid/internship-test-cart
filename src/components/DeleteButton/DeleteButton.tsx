@@ -1,10 +1,14 @@
-import { Icon28DeleteOutline } from "@vkontakte/icons"
+import type { FC } from "react"
 import { Text } from "@vkontakte/vkui"
-import React from "react"
 import { useAppDispatch } from "../../store/hooks"
 import { deleteItem } from "../../store/cartSlice"
+import { Icon28DeleteOutline } from "@vkontakte/icons"
 
-export const DeleteButton = ({ id }: { id: number }) => {
+interface DeleteButtonProps {
+  id: number
+}
+
+export const DeleteButton: FC<DeleteButtonProps> = ({ id }) => {
   const dispatch = useAppDispatch()
 
   return (

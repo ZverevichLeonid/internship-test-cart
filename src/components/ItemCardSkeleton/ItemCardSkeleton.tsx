@@ -1,6 +1,6 @@
-import { FC } from "react"
+import type { FC } from "react"
 import type { Item } from "../itemsList/ItemsList"
-import { Card, Div, Title } from "@vkontakte/vkui"
+import { Card, Div } from "@vkontakte/vkui"
 import { Counter } from "../Counter/Counter"
 import { DeleteButton } from "../DeleteButton/DeleteButton"
 import "./ItemCardSkeleton.css"

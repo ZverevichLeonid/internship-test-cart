@@ -6,8 +6,15 @@ export interface CounterSliceState {
   items: Item[]
 }
 
+interface PayloadWithId {
+  id: number
+}
+interface IAction {
+  type: string
+  payload: PayloadWithId
+}
 const initialState: CounterSliceState = {
-  status: "error",
+  status: "loading",
   items: [],
 }
 
@@ -15,49 +22,25 @@ export const cartSlice = createAppSlice({
   name: "cart",
   initialState,
   reducers: create => ({
-    increment: create.reducer(
-      (
-        state,
-        action: {
-          payload: { id: number }
-          type: string
-        },
-      ) => {
-        let item = state.items.find(item => item.id === action.payload.id)
-        if (item)
-          if (item.quantity < 10) {
-            item.quantity = item.quantity + 1
-            item.total = item.quantity * item.price
-          }
-      },
-    ),
-    decrement: create.reducer(
-      (
-        state,
-        action: {
-          payload: { id: number }
-          type: string
-        },
-      ) => {
-        let item = state.items.find(item => item.id === action.payload.id)
-        if (item)
-          if (item.quantity > 1) {
-            item.quantity = item.quantity - 1
-            item.total = item.quantity * item.price
-          }
-      },
-    ),
-    deleteItem: create.reducer(
-      (
-        state,
-        action: {
-          payload: { id: number }
-          type: string
-        },
-      ) => {
-        state.items = state.items.filter(item => item.id !== action.payload.id)
-      },
-    ),
+    increment: create.reducer((state, action: IAction) => {
+      let item = state.items.find(item => item.id === action.payload.id)
+      if (item)
+        if (item.quantity < 10) {
+          item.quantity = item.quantity + 1
+          item.total = item.quantity * item.price
+        }
+    }),
+    decrement: create.reducer((state, action: IAction) => {
+      let item = state.items.find(item => item.id === action.payload.id)
+      if (item)
+        if (item.quantity > 1) {
+          item.quantity = item.quantity - 1
+          item.total = item.quantity * item.price
+        }
+    }),
+    deleteItem: create.reducer((state, action: IAction) => {
+      state.items = state.items.filter(item => item.id !== action.payload.id)
+    }),
     fetchItems: create.asyncThunk(
       async () => {
         const response = await fetch(`https://dummyjson.com/carts/1`)

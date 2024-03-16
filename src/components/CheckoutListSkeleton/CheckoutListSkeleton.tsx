@@ -1,6 +1,7 @@
+import type { FC } from "react"
 import { Card, Div } from "@vkontakte/vkui"
 import "./CheckoutListSkeleton.css"
-export const CheckoutListSkeleton = () => {
+export const CheckoutListSkeleton: FC = () => {
   return (
     <div>
       <Card

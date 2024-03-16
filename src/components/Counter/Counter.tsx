@@ -2,8 +2,8 @@ import { FC } from "react"
 import { Icon16Add, Icon16Minus } from "@vkontakte/icons"
 import { IconButton } from "@vkontakte/vkui"
 import { decrement, increment } from "../../store/cartSlice"
-import "./Counter.css"
 import { useAppDispatch } from "../../store/hooks"
+import "./Counter.css"
 
 export type CounterProps = {
   value: number

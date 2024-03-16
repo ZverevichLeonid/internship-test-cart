@@ -1,5 +1,10 @@
+import type { FC } from "react"
 import "./CartWrapper.css"
 
-export const CartWrapper = ({ children }: { children: React.ReactNode }) => {
+interface CartWrapperProps {
+  children: React.ReactNode
+}
+
+export const CartWrapper: FC<CartWrapperProps> = ({ children }) => {
   return <div className="cart-wrapper">{children}</div>
 }

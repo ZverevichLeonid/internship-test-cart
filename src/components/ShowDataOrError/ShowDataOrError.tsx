@@ -4,14 +4,16 @@ import { CheckoutList } from "../CheckoutList/CheckoutList"
 import { ItemsList, type Item } from "../itemsList/ItemsList"
 import { ItemsListSkeleton } from "../ItemsListSkeleton/ItemsListSkeleton"
 import { CheckoutListSkeleton } from "../CheckoutListSkeleton/CheckoutListSkeleton"
-type status = "loading" | "success" | "error"
+import { FC } from "react"
 
-export const ShowDataOrError = ({
+interface ShowDataOrErrorProps {
+  status: "loading" | "success" | "error"
+  items: Item[]
+}
+
+export const ShowDataOrError: FC<ShowDataOrErrorProps> = ({
   status,
   items,
-}: {
-  status: status
-  items: Item[]
 }) => {
   switch (status) {
     case "success":
